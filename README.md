@@ -1,18 +1,14 @@
-# SalesPilot AI — Vercel version
+# SalesPilot AI — Supabase v1
+Adds email/password login, Supabase Auth, secure per-user lead storage, recent leads, and sign out.
 
-Next.js app designed for Vercel deployment.
+## Setup
+1. Supabase → SQL Editor → paste `supabase.sql` → Run.
+2. Supabase → Project Settings → API. Copy Project URL and Publishable key.
+3. Vercel → Settings → Environment Variables:
+   NEXT_PUBLIC_SUPABASE_URL
+   NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY
+   Select Production, Preview, Development.
+4. Redeploy.
 
-## Deploy
-1. Push the contents of this folder to GitHub.
-2. Import the repository into Vercel.
-3. Framework: Next.js (auto-detected).
-4. Add environment variables from `.env.example` in Vercel Project Settings → Environment Variables.
-5. Deploy.
-
-## Required for live AI
-OPENAI_API_KEY and optionally OPENAI_MODEL.
-
-## Required for live subscriptions
-STRIPE_SECRET_KEY, STRIPE_PRICE_ID, APP_URL.
-
-Use Stripe test mode first. Never commit secret keys.
+If email confirmation is enabled, confirm the new user's email before signing in.
+Never put a Supabase secret/service-role key in `NEXT_PUBLIC_*` variables.

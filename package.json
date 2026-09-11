@@ -1,1 +1,1 @@
-{"name":"salespilot-ai","version":"0.3.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"next":"latest","react":"latest","react-dom":"latest","openai":"latest","stripe":"latest"},"engines":{"node":">=20"}}
+{"name":"salespilot-ai","version":"0.4.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"next":"latest","react":"latest","react-dom":"latest","openai":"latest","stripe":"latest","@supabase/supabase-js":"latest"},"engines":{"node":">=20"}}
