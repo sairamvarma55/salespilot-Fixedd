@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+body {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.topbar {
+  height: 66px;
+  padding: 0 28px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 800;
+  color: #111827;
+}
+
+.brand span {
+  color: #5b5bd6;
+}
+
+.upgrade {
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 19px;
+  background: #5b5bd6;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.upgrade:hover {
+  opacity: 0.9;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-pill {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.wrap {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 54px 0 70px;
+}
+
+.hero {
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(38px, 5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  margin: 0;
+  color: #64748b;
+  font-size: 19px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.card h2 {
+  margin: 0 0 24px;
+  font-size: 27px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field {
+  margin-bottom: 17px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field input,
+.field textarea,
+.field select {
+  width: 100%;
+  border: 1px solid #d6dbe5;
+  border-radius: 11px;
+  padding: 13px 14px;
+  background: white;
+  color: #111827;
+  outline: none;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+  border-color: #5b5bd6;
+  box-shadow: 0 0 0 3px rgba(91, 91, 214, 0.12);
+}
+
+.field textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+
+.btn {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 17px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #111827;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #252b36;
+}
+
+.btn-light {
+  background: #eef1f6;
+  color: #111827;
+}
+
+.result {
+  min-height: 280px;
+  border: 1px dashed #b8bde8;
+  border-radius: 14px;
+  padding: 20px;
+  white-space: pre-wrap;
+  line-height: 1.65;
+  color: #1f2937;
+  background: #fbfbff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.notice {
+  margin: 0 0 20px;
+  padding: 13px 16px;
+  border-radius: 11px;
+  background: #fff7df;
+  color: #8a5a00;
+  border: 1px solid #f4df9d;
+}
+
+.notice.error {
+  background: #fff1f2;
+  color: #b42318;
+  border-color: #fecdd3;
+}
+
+.leads {
+  margin-top: 22px;
+}
+
+.lead-item {
+  padding: 18px 0;
+  border-top: 1px solid #edf0f4;
+}
+
+.lead-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.lead-title {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.lead-date {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.lead-msg {
+  margin-top: 10px;
+  white-space: pre-wrap;
+  line-height: 1.55;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.auth {
+  width: min(460px, calc(100% - 40px));
+  margin: 80px auto;
+}
+
+.auth h2 {
+  margin-bottom: 8px;
+}
+
+.auth .btn {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.auth-switch {
+  text-align: center;
+  margin: 22px 0 0;
+  color: #6b7280;
+}
+
+.linkbtn {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #5b5bd6;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    padding: 0 16px;
+  }
+
+  .top-actions .user-pill {
+    display: none;
+  }
+
+  .upgrade {
+    padding: 10px 13px;
+    font-size: 14px;
+  }
+
+  .wrap {
+    width: min(100% - 24px, 700px);
+    padding-top: 35px;
+  }
+}
